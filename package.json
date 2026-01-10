@@ -1,5 +1,5 @@
 {
-  "name": "chidi-art",
+  "name": "chidi.art_site",
   "scripts": {
     "dev": "nuxt dev --extends docus",
     "build": "nuxt build --extends docus"
