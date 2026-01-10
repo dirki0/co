@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+:root {
+}
+:root {
+  --ui-primary: #F09;
+
+  --font-sans: "PPM-V", system-ui, sans-serif;
+
+  --color-violet-50: oklch(0.985 0 0);
+  --color-violet-100: oklch(0.97 0 0);
+  --color-violet-200: oklch(0.960 0 0);
+  --color-violet-200x: oklch(0.922 0 0);
+  --color-violet-300: oklch(0.87 0 0);
+  --color-violet-400: oklch(0.708 0 0);
+  --color-violet-500: oklch(0.556 0 0);
+  --color-violet-600: oklch(0.439 0 0);
+  --color-violet-700: oklch(0.200 0 0);
+  --color-violet-700x: oklch(0.371 0 0);
+  --color-violet-800: oklch(0.150 0 0);
+  --color-violet-800x: oklch(0.269 0 0);
+  --color-violet-900: oklch(0.05 0 0);
+  --color-violet-900x: oklch(0.105 0 0);
+  --color-violet-950: oklch(0.145 0 0);
+
+
+}
+
+nav > ul > li {
+  padding-bottom: 1em;
+}
+
+aside nav > ul > li,
+nav.toc-nav > ul > li {
+  padding-bottom: 1em;
+}
+
+h1.text-pretty {
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: 36px;
+}
+
+.md-content h2 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.post-description {
+   font-weight: 200;
+}
+
+
+.post-headline {
+   font-weight: 200;
+}
+
+.md-content .text-pretty {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-family: "PPNM-V", serif;
+  letter-spacing: 0.01em;
+}
+
+nav a {
+  font-size: 42px;
+  font-weight: 200;
+  letter-spacing: -2px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+aside nav a {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+aside nav a.text-highlighted {
+  font-weight: 600;
+}
+
+nav.toc-nav a {
+  padding-block: 6px;
+}
+
+nav.toc-nav a {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 16px;
+}
+
+.toc-title span {
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+aside nav button span {
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-left: 2.2em;
+  font-weight: 300;
+}
+
+nav button span {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: -1px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.md-content {
+  animation: fade-in 0.4s forwards;
+}
+
+/* Animation keyframes */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: "PPM-V";
+  src:
+    local("PPM-V"),
+    url("~/assets/PPM-V.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PPNM-V";
+  src:
+    local("PPNM-V"),
+    url("~/assets/PPNM-V.woff2") format("woff2");
+}
