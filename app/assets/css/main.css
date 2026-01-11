@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
-:root {
+
+
+@theme { 
+  
 }
+
 :root {
   --ui-primary: #F09;
 
