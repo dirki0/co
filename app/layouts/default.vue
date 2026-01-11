@@ -3,7 +3,7 @@
   <h1 class="pb-20">Hallo. Wilkommen.</h1>
 <div class="max-w-3xl mx-auto">
   <p>My site is undergoing a few changes. <br/> Please check again soon.</p>
-    <div/>
+    </div>
   <ChidiAvatar />
   </div>
 </template>
