@@ -91,7 +91,7 @@ const editLink = computed(() => {
 
     <UPageBody>
       <ContentRenderer
-        class="md-content text-3xl md:text-4xl font-[200] font-['PPNM-V']"
+        class="md-content text-3xl md:text-4xl"
         v-if="page"
         :value="page"
       />
