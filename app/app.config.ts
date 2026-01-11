@@ -117,8 +117,8 @@ export default defineAppConfig({
     pageHeader: {
       slots: {
         title: "post-title md:text-6xl text-5xl sm:text-5xl",
-        description: "post-description text-current pt-4",
-        headline: "post-headline pb-2 text-current uppercase lg:hidden",
+        description: "post-description text-current pt-4 text-xs lg:text-sm",
+        headline: "post-headline pb-2 text-current uppercase text-xs lg:hidden",
         base: "border-4"
       },
     },

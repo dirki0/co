@@ -6,6 +6,7 @@
   --ui-primary: #F09;
 
   --font-sans: "PPM-V", system-ui, sans-serif;
+  --font-sans-nm: "PPNM-V", system-ui, sans-serif;
 
   --color-violet-50: oklch(0.985 0 0);
   --color-violet-100: oklch(0.97 0 0);
@@ -55,7 +56,11 @@ h1.text-pretty {
    font-weight: 200;
 }
 
-.md-content .text-pretty {
+.md-content p {
+  line-height: 1em;
+}
+
+.x-md-content .text-pretty {
   font-size: 2em;
   font-weight: 400;
   line-height: 1.2em;
