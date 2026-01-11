@@ -7,6 +7,22 @@ export default defineAppConfig({
   },
 
   ui: {
+    table: {
+      slots: {
+        root: 'relative overflow-auto',
+        base: 'min-w-full',
+        caption: 'sr-only',
+        thead: 'relative',
+        tbody: 'isolate [&>tr]:data-[selectable=true]:hover:bg-elevated/50 [&>tr]:data-[selectable=true]:focus-visible:outline-primary',
+        tfoot: 'relative',
+        tr: 'data-[selected=true]:bg-elevated/50',
+        th: 'px-4 py-3.5 text-xs text-highlighted text-left rtl:text-right font-semibold [&:has([role=checkbox])]:pe-0',
+        td: 'p-4 text-sm text-muted whitespace-nowrap [&:has([role=checkbox])]:pe-0',
+        separator: 'absolute z-1 left-0 w-full h-px bg-(--ui-border-accented)',
+        empty: 'py-6 text-center text-sm text-muted',
+        loading: 'py-6 text-center'
+      }
+    },
     contentToc: {
       slots: {
         root: "sticky top-(--ui-header-height) z-10 bg-default/75 lg:bg-[initial] backdrop-blur -mx-4 px-4 sm:px-6 sm:-mx-6 overflow-y-auto max-h-[calc(100vh-var(--ui-header-height))]",

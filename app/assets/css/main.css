@@ -66,6 +66,11 @@ h1.text-pretty {
   font-family: "PPNM-V", serif;
 }
 
+.md-content th {
+  font-weight: 300;
+  font-size: .3em;
+}
+
 .x-md-content .text-pretty {
   font-size: 2em;
   font-weight: 400;
