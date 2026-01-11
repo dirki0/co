@@ -117,11 +117,14 @@ export default defineAppConfig({
     pageHeader: {
       slots: {
         title: "post-title md:text-6xl text-5xl sm:text-5xl",
-        description: "post-description text-current pt-4 text-xs lg:text-sm",
+        description: "post-description text-current  text-xs lg:text-sm",
         headline: "post-headline pb-2 text-current uppercase text-xs lg:hidden",
         base: "border-4"
       },
     },
+   pageBody: {
+    base: "mt-0"
+   },
     code: {
       slots: {
         base: "text-xs",
