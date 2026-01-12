@@ -251,7 +251,7 @@ export default defineAppConfig({
         root: "uppercase ms-0",
         linkLeadingIcon: "size-4 mr-1",
         linkTrailing: "hidden",
-        linkTitle: "text-current font-[300] py-0.5 text-3xl lg:text-xs",
+        linkTitle: "text-current -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:py-0.5 py-0.25 text-4xl lg:text-xs",
         link: "p-0 "
       },
       variants: {

@@ -16,7 +16,7 @@ const { localePath, isEnabled, locales } = useDocusI18n()
   >
 
     <template #title>
-      <AppHeaderLogo class="lg:pl-6.5 h-5 font-medium tracking-widest text-xs w-auto shrink-0" />
+      <AppHeaderLogo class="lg:pl-4 h-5 font-medium tracking-widest text-xs w-auto shrink-0" />
     </template>
 
     <template #right>
