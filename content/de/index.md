@@ -1,4 +1,6 @@
 ---
+title: Chidi
+description: Chidi Odili, Artist
 seo:
   title: chidi odili
   description: artist, chidi odili
@@ -6,8 +8,7 @@ seo:
 ---
 
 
-
 Wilkommen.
-
+<br/>
 This site is undergoing changes. Please check back soon.
 

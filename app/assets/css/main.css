@@ -2,9 +2,7 @@
 @import "@nuxt/ui";
 
 
-@theme { 
-  --indicator-size: 12px;
-}
+
 
 :root {
   --ui-primary: #F09;

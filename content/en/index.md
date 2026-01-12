@@ -1,10 +1,11 @@
 ---
+title: Chidi
+description: Chidi Odili, Artist
 seo:
   title: chidi odili
   description: artist, chidi odili
   ogImage: '/logo_OG.png'
 ---
-
 
 
 Wilkommen.

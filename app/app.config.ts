@@ -1,13 +1,14 @@
 export default defineAppConfig({
   header: {
-    title: "chidi odili",
+    title: "Chidi Odili",
   },
   docus: {
     locale: "en",
   },
 seo:{
-  title: "chidi odili",
-  descriptio: "chidi odili, artist",
+  title: "Chidi Odili",
+  descriptio: "Chidi Odili, Artist",
+  
 },
   ui: {
     table: {
