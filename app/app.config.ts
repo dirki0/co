@@ -5,7 +5,10 @@ export default defineAppConfig({
   docus: {
     locale: "en",
   },
-
+seo:{
+  title: "chidi odili",
+  descriptio: "chidi odili, artist",
+},
   ui: {
     table: {
       slots: {
