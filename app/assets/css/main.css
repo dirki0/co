@@ -3,7 +3,7 @@
 
 
 @theme { 
-  
+  --indicator-size: 12px;
 }
 
 :root {
@@ -29,6 +29,12 @@
   --color-violet-950: oklch(0.145 0 0);
 
 
+}
+
+.indicator-dot {
+--indicator-size: 12px;
+margin-top: 4px;
+translate: var(--tw-translate-x) calc(var(--indicator-position) * 0.7);
 }
 
 nav > ul > li {
@@ -79,7 +85,7 @@ h1.text-pretty {
   letter-spacing: 0.01em;
 }
 
-nav a {
+x-nav a {
   font-size: 42px;
   font-weight: 200;
   letter-spacing: -2px;
@@ -87,7 +93,7 @@ nav a {
   text-transform: uppercase;
 }
 
-aside nav a {
+x-aside nav a {
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0px;
@@ -99,7 +105,7 @@ aside nav a.text-highlighted {
   font-weight: 600;
 }
 
-nav.toc-nav a {
+x-nav.toc-nav a {
   padding-block: 6px;
 }
 
@@ -127,7 +133,8 @@ aside nav button span {
 }
 
 nav button span {
-  font-size: 18px;
+  padding-left: 2em;
+  font-size: 1em;
   font-weight: 200;
   letter-spacing: -1px;
   line-height: 24px;
