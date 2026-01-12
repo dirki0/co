@@ -10,5 +10,6 @@ seo:
 
 Wilkommen.
 <br/>
-This site is undergoing changes. Please check back soon.
+This site is undergoing changes. <br/>
+Please check back soon.
 
