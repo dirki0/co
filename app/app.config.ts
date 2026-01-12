@@ -125,7 +125,7 @@ export default defineAppConfig({
         top: "",
         bottom: "hidden lg:flex lg:flex-col gap-6",
         trigger:
-          "toc-title lg:pl-4.5 pl-0 group text-sm font-light flex-1 flex items-center gap-1.5 py-1.5 -mt-1.5 focus-visible:outline-primary",
+          "toc-title lg:pl-4.5 pl-5 group text-sm font-light flex-1 flex items-center gap-1.5 py-1.5 -mt-1.5 focus-visible:outline-primary",
         title: "truncate",
         trailing: "ms-auto inline-flex gap-1.5 items-center",
         trailingIcon:
@@ -181,7 +181,7 @@ export default defineAppConfig({
         },
         highlight: {
           true: {
-            list: "ms-2.5 ps-2 border-s border-default",
+            list: "ms-2.5 ps-2 ",
             item: "-ms-px",
           },
         },

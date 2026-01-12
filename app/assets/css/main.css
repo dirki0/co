@@ -123,6 +123,10 @@ nav.toc-nav a {
   text-transform: uppercase;
 }
 
+.toc-nav button span {
+  padding-left: 0;
+}
+
 aside nav button span {
   font-size: 12px;
   letter-spacing: 0px;
