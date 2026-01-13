@@ -5,132 +5,137 @@ export default defineAppConfig({
   docus: {
     locale: "en",
   },
-seo:{
-  title: "Chidi Odili",
-  descriptio: "Chidi Odili, Artist",
-  
-},
+  seo: {
+    title: "Chidi Odili",
+    descriptio: "Chidi Odili, Artist",
+  },
   ui: {
+    header: {
+      slots: { root: "border-current/10" },
+    },
     prose: {
       a: {
-        base: "font-[300] text-current border-b border-current"
-      }
+        base: "font-[300] text-current border-b border-current",
+      },
     },
     table: {
       slots: {
-        root: 'relative overflow-auto',
-        base: 'min-w-full',
-        caption: 'sr-only',
-        thead: 'relative',
-        tbody: 'isolate [&>tr]:data-[selectable=true]:hover:bg-elevated/50 [&>tr]:data-[selectable=true]:focus-visible:outline-primary',
-        tfoot: 'relative',
-        tr: 'data-[selected=true]:bg-elevated/50',
-        th: 'px-4 py-3.5 text-sm text-highlighted text-left rtl:text-right font-semibold [&:has([role=checkbox])]:pe-0',
-        td: 'p-4 text-sm text-muted whitespace-nowrap [&:has([role=checkbox])]:pe-0',
-        separator: 'absolute z-1 left-0 w-full h-px bg-(--ui-border-accented)',
-        empty: 'py-6 text-center text-sm text-muted',
-        loading: 'py-6 text-center'
+        root: "relative overflow-auto",
+        base: "min-w-full",
+        caption: "sr-only",
+        thead: "relative",
+        tbody:
+          "isolate [&>tr]:data-[selectable=true]:hover:bg-elevated/50 [&>tr]:data-[selectable=true]:focus-visible:outline-primary",
+        tfoot: "relative",
+        tr: "data-[selected=true]:bg-elevated/50",
+        th: "px-4 py-3.5 text-sm text-highlighted text-left rtl:text-right font-semibold [&:has([role=checkbox])]:pe-0",
+        td: "p-4 text-sm text-muted whitespace-nowrap [&:has([role=checkbox])]:pe-0",
+        separator: "absolute z-1 left-0 w-full h-px bg-(--ui-border-accented)",
+        empty: "py-6 text-center text-sm text-muted",
+        loading: "py-6 text-center",
       },
       variants: {
         virtualize: {
           false: {
-            base: 'overflow-clip',
-            tbody: 'divide-y divide-default'
-          }
+            base: "overflow-clip",
+            tbody: "divide-y divide-default",
+          },
         },
         pinned: {
           true: {
-            th: 'sticky bg-default/75 z-1',
-            td: 'sticky bg-default/75 z-1'
-          }
+            th: "sticky bg-default/75 z-1",
+            td: "sticky bg-default/75 z-1",
+          },
         },
         sticky: {
           true: {
-            thead: 'sticky top-0 inset-x-0 bg-default/75 backdrop-blur z-1',
-            tfoot: 'sticky bottom-0 inset-x-0 bg-default/75 backdrop-blur z-1'
+            thead: "sticky top-0 inset-x-0 bg-default/75 backdrop-blur z-1",
+            tfoot: "sticky bottom-0 inset-x-0 bg-default/75 backdrop-blur z-1",
           },
           header: {
-            thead: 'sticky top-0 inset-x-0 bg-default/75 backdrop-blur z-1'
+            thead: "sticky top-0 inset-x-0 bg-default/75 backdrop-blur z-1",
           },
           footer: {
-            tfoot: 'sticky bottom-0 inset-x-0 bg-default/75 backdrop-blur z-1'
-          }
+            tfoot: "sticky bottom-0 inset-x-0 bg-default/75 backdrop-blur z-1",
+          },
         },
         loading: {
           true: {
-            thead: 'after:absolute after:z-1 after:h-px'
-          }
+            thead: "after:absolute after:z-1 after:h-px",
+          },
         },
         loadingAnimation: {
-          carousel: '',
-          'carousel-inverse': '',
-          swing: '',
-          elastic: ''
+          carousel: "",
+          "carousel-inverse": "",
+          swing: "",
+          elastic: "",
         },
         loadingColor: {
-          primary: '',
-          secondary: '',
-          success: '',
-          info: '',
-          warning: '',
-          error: '',
-          neutral: ''
-        }
+          primary: "",
+          secondary: "",
+          success: "",
+          info: "",
+          warning: "",
+          error: "",
+          neutral: "",
+        },
       },
       compoundVariants: [
         {
           loading: true,
-          loadingColor: 'primary',
+          loadingColor: "primary",
           class: {
-            thead: 'after:bg-primary'
-          }
+            thead: "after:bg-primary",
+          },
         },
         {
           loading: true,
-          loadingColor: 'neutral',
+          loadingColor: "neutral",
           class: {
-            thead: 'after:bg-inverted'
-          }
+            thead: "after:bg-inverted",
+          },
         },
         {
           loading: true,
-          loadingAnimation: 'carousel',
+          loadingAnimation: "carousel",
           class: {
-            thead: 'after:animate-[carousel_2s_ease-in-out_infinite] rtl:after:animate-[carousel-rtl_2s_ease-in-out_infinite]'
-          }
+            thead:
+              "after:animate-[carousel_2s_ease-in-out_infinite] rtl:after:animate-[carousel-rtl_2s_ease-in-out_infinite]",
+          },
         },
         {
           loading: true,
-          loadingAnimation: 'carousel-inverse',
+          loadingAnimation: "carousel-inverse",
           class: {
-            thead: 'after:animate-[carousel-inverse_2s_ease-in-out_infinite] rtl:after:animate-[carousel-inverse-rtl_2s_ease-in-out_infinite]'
-          }
+            thead:
+              "after:animate-[carousel-inverse_2s_ease-in-out_infinite] rtl:after:animate-[carousel-inverse-rtl_2s_ease-in-out_infinite]",
+          },
         },
         {
           loading: true,
-          loadingAnimation: 'swing',
+          loadingAnimation: "swing",
           class: {
-            thead: 'after:animate-[swing_2s_ease-in-out_infinite]'
-          }
+            thead: "after:animate-[swing_2s_ease-in-out_infinite]",
+          },
         },
         {
           loading: true,
-          loadingAnimation: 'elastic',
+          loadingAnimation: "elastic",
           class: {
-            thead: 'after:animate-[elastic_2s_ease-in-out_infinite]'
-          }
-        }
+            thead: "after:animate-[elastic_2s_ease-in-out_infinite]",
+          },
+        },
       ],
       defaultVariants: {
-        loadingColor: 'primary',
-        loadingAnimation: 'carousel'
-      }
+        loadingColor: "primary",
+        loadingAnimation: "carousel",
+      },
     },
     contentToc: {
       slots: {
         root: "sticky top-(--ui-header-height) z-10 bg-default/75 lg:bg-[initial] backdrop-blur -mx-4 px-4 sm:px-6 sm:-mx-6 overflow-y-auto max-h-[calc(100vh-var(--ui-header-height))]",
         container:
-          "pt-4 sm:pt-6 pb-2.5 sm:pb-4.5 lg:py-8 border-b border-dashed border-default lg:border-0 flex flex-col",
+          "pt-4 sm:pt-6 pb-2.5 sm:pb-4.5 lg:py-8 border-b border-dashed border-current/10 lg:border-0 flex flex-col",
         top: "",
         bottom: "hidden lg:flex lg:flex-col gap-6",
         trigger:
@@ -146,7 +151,8 @@ seo:{
         item: "min-w-0",
         itemWithChildren: "",
         link: "text-default uppercase group relative text-sm flex items-center focus-visible:outline-primary py-0.5",
-        linkText: "truncate hover:text-primary active:border-current border-b border-transparent",
+        linkText:
+          "truncate hover:text-primary active:border-current border-b border-transparent",
         indicator:
           "absolute indicator-dot ms-2.5 transition-[translate,height] duration-200 h-3 translate-y-(--indicator-position) w-px rounded-full",
       },
@@ -228,16 +234,16 @@ seo:{
       neutral: "violet",
     },
     contentSurround: {
-  slots:{
-    linkLeadingIcon:"group-hover:text-current",
-    link:"hover:bg-transparent hover:border-current/20  active:border-current",
-    linkLeading: [
-          'group-hover:bg-transparent bg-transparent ring ring-accented mb-4 group-hover:ring-current',
-          'transition'
+      slots: {
+        linkLeadingIcon: "group-hover:text-current",
+        link: "hover:bg-transparent hover:border-current/20  active:border-current",
+        linkLeading: [
+          "group-hover:bg-transparent bg-transparent ring ring-accented mb-4 group-hover:ring-current",
+          "transition",
         ],
-    linkTitle: 'font-[300] text-sm text-highlighted mb-1 truncate',
-        linkDescription: 'font-[300] text-sm text-muted line-clamp-2'
-  }
+        linkTitle: "font-[300] text-sm text-highlighted mb-1 truncate",
+        linkDescription: "font-[300] text-sm text-muted line-clamp-2",
+      },
     },
     button: {
       slots: {
@@ -249,12 +255,12 @@ seo:{
         title: "post-title md:text-6xl text-5xl sm:text-5xl",
         description: "post-description text-current  text-xs lg:text-sm",
         headline: "post-headline pb-2 text-current uppercase text-xs lg:hidden",
-        base: "border-4"
+        base: "border-4",
       },
     },
-   pageBody: {
-    base: "mt-0"
-   },
+    pageBody: {
+      base: "mt-0",
+    },
     code: {
       slots: {
         base: "text-xs",
@@ -272,18 +278,19 @@ seo:{
         root: "uppercase ms-0",
         linkLeadingIcon: "size-4 mr-1",
         linkTrailing: "hidden",
-        linkTitle: "text-current border-b border-transparent hover:text-primary active:border-current active:border-b active:text-current -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:pt-1 pb-0 pt-0.5 text-4xl lg:text-xs",
-        link: "p-0"
+        linkTitle:
+          "text-current border-b border-transparent hover:text-primary active:border-current active:border-b active:text-current -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:pt-1 pb-0 pt-0.5 text-4xl lg:text-xs",
+        link: "p-0",
       },
       variants: {
         active: {
           true: {
-            link: 'font-medium'
+            link: "font-medium",
           },
           false: {
-            link: 'text-current',
-            linkLeadingIcon: 'text-dimmed'
-          }
+            link: "text-current",
+            linkLeadingIcon: "text-dimmed",
+          },
         },
       },
       defaultVariants: {
