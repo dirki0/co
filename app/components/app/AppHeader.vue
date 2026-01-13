@@ -33,7 +33,7 @@ const { localePath, isEnabled, locales } = useDocusI18n()
 
         <USeparator
           orientation="vertical"
-          class="h-8"
+          class="h-6 hidden border-current/10"
         />
       </template>
 

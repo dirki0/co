@@ -10,6 +10,9 @@ export default defineAppConfig({
     descriptio: "Chidi Odili, Artist",
   },
   ui: {
+    separator:{
+      slots: {root:"border-current/10"},
+    },
     header: {
       slots: { root: "border-current/10" },
     },
