@@ -49,7 +49,7 @@ function getEmojiFlag(locale: string): string {
     <UButton
       color="neutral"
       variant="ghost"
-      class="size-8 rounded-full items-center justify-center"
+      class="size-8 rounded-full items-center justify-center font-[300]"
     >
       <template #trailing>
         <div class="text-sm ">
@@ -59,7 +59,7 @@ function getEmojiFlag(locale: string): string {
     </UButton>
 
     <template #content>
-      <ul class="flex flex-col">
+      <ul class="flex flex-col font-[200] text-left">
         <li
           v-for="localeItem in locales"
           :key="localeItem.code"

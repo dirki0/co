@@ -62,8 +62,7 @@ const isDark = computed({
     @click="isDark = !isDark"
   >
     <template #leading="{ ui }">
-      <span> Light</span>
-      <UIcon :class="ui.leadingIcon({ class: [props.ui?.leadingIcon, 'dark:hidden'] })" :name="appConfig.ui.icons.light" />
+      <div> Light</div>
     </template>
   </UButton>
 </template>

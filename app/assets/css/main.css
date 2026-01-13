@@ -1,8 +1,12 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+[data-theme="dark"] {  
+  --ui-primary: #0FF;
+}
+
 :root {
-  --ui-primary: #F09;
+  --ui-primary: #F0F;
 
   --font-sans: "PPM-V", system-ui, sans-serif;
   --font-sans-nm: "PPNM-V", system-ui, sans-serif;

@@ -11,6 +11,11 @@ seo:{
   
 },
   ui: {
+    prose: {
+      a: {
+        base: "font-[300] text-current border-b border-current"
+      }
+    },
     table: {
       slots: {
         root: 'relative overflow-auto',
@@ -141,7 +146,7 @@ seo:{
         item: "min-w-0",
         itemWithChildren: "",
         link: "text-default uppercase group relative text-sm flex items-center focus-visible:outline-primary py-0.5",
-        linkText: "truncate",
+        linkText: "truncate hover:text-primary ",
         indicator:
           "absolute indicator-dot ms-2.5 transition-[translate,height] duration-200 h-3 translate-y-(--indicator-position) w-px rounded-full",
       },
@@ -222,6 +227,18 @@ seo:{
       primary: "neutral",
       neutral: "violet",
     },
+    contentSurround: {
+  slots:{
+    linkLeadingIcon:"group-hover:text-current",
+    link:"hover:bg-transparent hover:border-current/20",
+    linkLeading: [
+          'group-hover:bg-transparent bg-transparent ring ring-accented mb-4 group-hover:ring-current',
+          'transition'
+        ],
+    linkTitle: 'font-[300] text-sm text-highlighted mb-1 truncate',
+        linkDescription: 'font-[300] text-sm text-muted line-clamp-2'
+  }
+    },
     button: {
       slots: {
         base: "rounded-full",
@@ -255,7 +272,7 @@ seo:{
         root: "uppercase ms-0",
         linkLeadingIcon: "size-4 mr-1",
         linkTrailing: "hidden",
-        linkTitle: "text-current -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:py-0.5 py-0.25 text-4xl lg:text-xs",
+        linkTitle: "text-current hover:text-primary -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:py-0.5 py-0.25 text-4xl lg:text-xs",
         link: "p-0 "
       },
       variants: {
