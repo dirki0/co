@@ -1,5 +1,5 @@
 <template>
-  <div class="md-content text-3xl md:text-4xl max-w-xl mx-auto h-svh -mt-[6rem] text-center flex items-center">
+  <div class="md-content px-8 text-xl md:text-4xl max-w-2xl mx-auto h-svh -mt-[8rem] text-center flex items-center">
  
     <div>
     <slot />
