@@ -55,6 +55,9 @@ h1.text-pretty {
   font-weight: 200;
   font-size: 2rem;
 }
+.md-content td {
+  padding: 0.2rem;
+}
 
 .post-description {
    font-weight: 200;
