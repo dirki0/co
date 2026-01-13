@@ -272,7 +272,7 @@ seo:{
         root: "uppercase ms-0",
         linkLeadingIcon: "size-4 mr-1",
         linkTrailing: "hidden",
-        linkTitle: "text-current border-b border-transparent hover:text-primary active:border-primary pb-0 active:border-b active:text-primary -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:pt-1 pb-0 pt-0.5 text-4xl lg:text-xs",
+        linkTitle: "text-current border-b border-transparent hover:text-primary active:border-current active:border-b active:text-current -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:pt-1 pb-0 pt-0.5 text-4xl lg:text-xs",
         link: "p-0"
       },
       variants: {
