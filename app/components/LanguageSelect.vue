@@ -45,6 +45,7 @@ function getEmojiFlag(locale: string): string {
 <template>
   <UPopover
     :content="{ align: 'start' }"
+    mode="hover"
   >
     <UButton
       color="neutral"
