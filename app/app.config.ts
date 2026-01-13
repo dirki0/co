@@ -230,7 +230,7 @@ seo:{
     contentSurround: {
   slots:{
     linkLeadingIcon:"group-hover:text-current",
-    link:"hover:bg-transparent hover:border-current/20",
+    link:"hover:bg-transparent hover:border-current/20  active:border-current",
     linkLeading: [
           'group-hover:bg-transparent bg-transparent ring ring-accented mb-4 group-hover:ring-current',
           'transition'
@@ -272,8 +272,8 @@ seo:{
         root: "uppercase ms-0",
         linkLeadingIcon: "size-4 mr-1",
         linkTrailing: "hidden",
-        linkTitle: "text-current hover:text-primary -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:py-0.5 py-0.25 text-4xl lg:text-xs",
-        link: "p-0 "
+        linkTitle: "text-current border-b border-transparent hover:text-primary active:border-current active:border-b active:text-current -tracking-[0.1rem] lg:tracking-normal font-[200] lg:font-[300] lg:pt-1 pb-0 pt-0.5 text-4xl lg:text-xs",
+        link: "p-0"
       },
       variants: {
         active: {
