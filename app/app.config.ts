@@ -7,9 +7,12 @@ export default defineAppConfig({
   },
   seo: {
     title: "Chidi Odili",
-    descriptio: "Chidi Odili, Artist",
+    descriptio: "C° Artist",
   },
   ui: {
+    pageHero:{
+      slots:{headline:"pb-2"}
+    },
     separator:{
       slots: {root:"border-current/7"},
     },

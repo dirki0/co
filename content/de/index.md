@@ -1,15 +1,29 @@
 ---
-title: Chidi
-description: Chidi Odili, Artist
 seo:
-  title: chidi odili
-  description: artist, chidi odili
-  ogImage: '/logo_OG.png'
+  title: UI design
+  description: Chidi Odili ist Grafikdesigner.
 ---
 
 
-Wilkommen.
+::u-page-hero
 <br/>
-This site is undergoing changes. <br/>
-Please check back soon.
+#title
+Willkommen
 
+
+#links
+  :::u-button
+  ---
+  color: neutral
+  size: xl
+  to: /de/art/introduction
+  trailing-icon: i-lucide-arrow-right
+  class: px-6 mt-2 text-xl font-[300]
+  ---
+  Weiter
+  :::
+
+
+#headline
+  Chidi Odili ist Grafikdesigner.
+::

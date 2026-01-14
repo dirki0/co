@@ -16,8 +16,9 @@ const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 const collectionName = computed(() => isEnabled.value ? `docs_${locale.value}` : 'docs')
 
 const [{ data: page }, { data: surround }] = await Promise.all([
+  //useAsyncData(kebabCase(route.path), () => queryCollection(collectionName.value as keyof Collections).path(route.path).first() as Promise<DocsCollectionItem>),
   useAsyncData(kebabCase(route.path), () => queryCollection(collectionName.value as keyof Collections).path(route.path).first() as Promise<DocsCollectionItem>),
-  useAsyncData(`${kebabCase(route.path)}-surround`, () => {
+    useAsyncData(`${kebabCase(route.path)}-surround`, () => {
     return queryCollectionItemSurroundings(collectionName.value as keyof Collections, route.path, {
       fields: ['description'],
     })
@@ -26,6 +27,10 @@ const [{ data: page }, { data: surround }] = await Promise.all([
 
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
+
+if (page.value.layout) {
+  setPageLayout(page.value.layout as never)
 }
 
 // Add the page path to the prerender list
