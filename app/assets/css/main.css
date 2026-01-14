@@ -5,8 +5,15 @@
   --ui-primary: #0FF;
 }
 
-:root {
+.dark {  
+  --ui-primary: #0FF;
+}
+.light {  
   --ui-primary: #F0F;
+}
+
+
+:root {
 
   --font-sans: "PPM-V", system-ui, sans-serif;
   --font-sans-nm: "PPNM-V", system-ui, sans-serif;

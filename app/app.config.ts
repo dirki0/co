@@ -11,7 +11,7 @@ export default defineAppConfig({
   },
   ui: {
     pageHero:{
-      slots:{headline:"pb-2"}
+      slots:{headline:"pb-2 text-xs sm:text-base"}
     },
     separator:{
       slots: {root:"border-current/7"},
