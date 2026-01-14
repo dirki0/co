@@ -30,6 +30,7 @@ if (locales && Array.isArray(locales)) {
         cwd,
         include: `${code}/index.md`,
       },
+      schema: createDocsSchema(),
     })
 
     collections[`docs_${code}`] = defineCollection({
@@ -52,6 +53,7 @@ else {
         cwd,
         include: 'index.md',
       },
+      schema: createDocsSchema(),
     }),
     docs: defineCollection({
       type: 'page',

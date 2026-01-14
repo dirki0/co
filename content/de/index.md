@@ -1,7 +1,7 @@
 ---
 seo:
   title: UI design
-  description: Chidi Odili ist Grafikdesigner.
+  description: Chidi Odili ist ein bildender Künstler.
 ---
 
 
@@ -25,5 +25,5 @@ Willkommen
 
 
 #headline
-  Chidi Odili ist Grafikdesigner.
+  Chidi Odili ist ein bildender Künstler
 ::

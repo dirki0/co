@@ -1,13 +1,13 @@
 export default defineAppConfig({
   header: {
-    title: "Chidi Odili",
+    title: "Chidi Odili ist ein bildender Künstler",
   },
   docus: {
     locale: "en",
   },
   seo: {
     title: "Chidi Odili",
-    descriptio: "C° Artist",
+    description: "Chidi Odili ist ein bildender Künstler",
   },
   ui: {
     pageHero:{
