@@ -12,10 +12,11 @@ const { data: page } = await useAsyncData(collectionName.value, () => queryColle
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
+/*
 if (page.value.layout) {
   setPageLayout(page.value.layout as never)
 }
-
+*/
 const title = page.value.seo?.title || page.value.title
 const description = page.value.seo?.description || page.value.description
 

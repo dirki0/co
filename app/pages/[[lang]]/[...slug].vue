@@ -38,10 +38,11 @@ const [{ data: page }, { data: surround }] = await Promise.all([
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
-
+/*
 if (page.value.layout) {
   setPageLayout(page.value.layout as never)
 }
+*/
 
 // Add the page path to the prerender list
 addPrerenderPath(`/raw${route.path}.md`)
