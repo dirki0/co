@@ -18,7 +18,7 @@ Willkommen
   variant: outline
   color: neutral
   size: xl
-  to: /de/art/introduction
+  to: /de/kunst/vorwort
   trailing-icon: i-lucide-arrow-right
   class: px-6 mt-2 text-xl font-[300]
   ---
