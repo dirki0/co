@@ -1,4 +1,5 @@
 ---
+layout: landingpage
 seo:
   title: UI design
   description: Chidi Odili ist ein bildender Künstler.
@@ -14,6 +15,7 @@ Willkommen
 #links
   :::u-button
   ---
+  variant: outline
   color: neutral
   size: xl
   to: /de/art/introduction

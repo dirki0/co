@@ -3,13 +3,16 @@ export default defineAppConfig({
     title: "Chidi Odili ist ein bildender Künstler",
   },
   docus: {
-    locale: "en",
+    locale: "de",
   },
   seo: {
     title: "Chidi Odili",
     description: "Chidi Odili ist ein bildender Künstler",
   },
   ui: {
+    popover:{
+      slots:{content:"popover-component"}
+    },
     pageHero:{
       slots:{headline:"pb-2 text-xs sm:text-base"}
     },

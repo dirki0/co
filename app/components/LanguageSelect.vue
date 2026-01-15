@@ -44,7 +44,7 @@ function getEmojiFlag(locale: string): string {
 
 <template>
   <UPopover
-    :content="{ align: 'end' }"
+    :content="{ align: 'start' }"
   >
     <UButton
       color="neutral"
@@ -59,7 +59,7 @@ function getEmojiFlag(locale: string): string {
     </UButton>
 
     <template #content>
-      <ul class="flex flex-col font-[200] text-left">
+      <ul class="flex flex-col font-[200]">
         <li
           v-for="localeItem in locales"
           :key="localeItem.code"

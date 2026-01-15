@@ -39,6 +39,11 @@ else {
   })
 }
 
+  definePageMeta({
+   colorMode: 'cust'
+})
+
+
 
 </script>
 
@@ -48,3 +53,5 @@ else {
     :value="page"
   />
 </template>
+
+

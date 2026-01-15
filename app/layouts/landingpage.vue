@@ -1,27 +1,10 @@
+
 <template>
   <UMain>
     <slot />
-    <UCarousel
-    v-slot="{ item }"
-    fade
-    arrows
-    dots
-    :items="items"
-    class="w-full max-w-xs mx-auto"
-  >
-    <img :src="item" width="320" height="320" class="rounded-lg">
-  </UCarousel>
+    <div class="mx-auto h-screen overflow-hidden fixed -z-[100] inset-0">
+    <img src="/images/1984.gif" width="2000px" height="2000px" class="aspect-1/1 h-screen object-cover rounded-0">
+  </div>
   </UMain>
 </template>
 
-
-<script setup lang="ts">
-const items = [
-  'https://picsum.photos/640/640?random=1',
-  'https://picsum.photos/640/640?random=2',
-  'https://picsum.photos/640/640?random=3',
-  'https://picsum.photos/640/640?random=4',
-  'https://picsum.photos/640/640?random=5',
-  'https://picsum.photos/640/640?random=6'
-]
-</script>

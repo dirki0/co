@@ -8,6 +8,16 @@ definePageMeta({
   layout: 'docs',
 })
 
+const colorMode = useColorMode();
+const isDark = computed({
+  get() {
+    return colorMode.value === "dark";
+  },
+  set(_isDark) {
+    colorMode.preference = _isDark ? "dark" : "light";
+  }
+});
+
 const route = useRoute()
 const { locale, isEnabled, t } = useDocusI18n()
 const appConfig = useAppConfig()

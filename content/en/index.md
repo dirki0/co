@@ -1,4 +1,5 @@
 ---
+layout: landingpage
 seo:
   title: Visual Design
   description: Chidi Odili is a Visual Artist.
@@ -14,6 +15,7 @@ Welcome
 #links
   :::u-button
   ---
+  variant: outline
   color: neutral
   size: xl
   to: /en/art/introduction

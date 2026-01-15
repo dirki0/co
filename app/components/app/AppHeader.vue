@@ -3,8 +3,11 @@ import { useDocusI18n } from '../../composables/useDocusI18n'
 
 const appConfig = useAppConfig()
 const site = useSiteConfig()
-
 const { localePath, isEnabled, locales } = useDocusI18n()
+
+const route = useRoute()
+const currentLocale = route.path.split('/')[2]
+const routeArray = route.path.split('/')
 
 </script>
 
@@ -33,13 +36,13 @@ const { localePath, isEnabled, locales } = useDocusI18n()
 
         <USeparator
           orientation="vertical"
-          class="h-6 hidden border-current/7"
+          class="h-6 hidden"
         />
       </template>
 
 
       <ClientOnly>
-        <UColorModeButton class="rounded-full" />
+        <UColorModeButton class="color-mode-button rounded-full" />
 
         <template #fallback>
           <div class="h-8 w-8 animate-pulse bg-neutral-200 dark:bg-neutral-800 rounded-full" />

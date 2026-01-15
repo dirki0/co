@@ -1,46 +1,158 @@
+@variant light (&:where(.light, .light *));
+@variant dark (&:where(.dark, .dark *));
+@layer theme {
+  :host,
+  :root {
+    --ui-header-height: --spacing(16);
+  }
+  .light,
+  :host,
+  :root {
+    --ui-text-dimmed: var(--ui-color-neutral-400);
+    --ui-text-muted: var(--ui-color-neutral-500);
+    --ui-text-toned: var(--ui-color-neutral-600);
+    --ui-text: var(--ui-color-neutral-700);
+    --ui-text-highlighted: var(--ui-color-neutral-900);
+    --ui-text-inverted: #fff;
+    --ui-bg: #fff;
+    --ui-bg-muted: var(--ui-color-neutral-50);
+    --ui-bg-elevated: var(--ui-color-neutral-100);
+    --ui-bg-accented: var(--ui-color-neutral-200);
+    --ui-bg-inverted: var(--ui-color-neutral-900);
+    --ui-border: var(--ui-color-neutral-200);
+    --ui-border-muted: var(--ui-color-neutral-200);
+    --ui-border-accented: var(--ui-color-neutral-300);
+    --ui-border-inverted: var(--ui-color-neutral-900);
+    --ui-radius: 0.25rem;
+    --ui-container: 80rem;
+  }
+  .dark {
+    --ui-text-dimmed: var(--ui-color-neutral-500);
+    --ui-text-muted: var(--ui-color-neutral-400);
+    --ui-text-toned: var(--ui-color-neutral-300);
+    --ui-text: var(--ui-color-neutral-200);
+    --ui-text-highlighted: #fff;
+    --ui-text-inverted: var(--ui-color-neutral-900);
+    --ui-bg: var(--ui-color-neutral-900);
+    --ui-bg-muted: var(--ui-color-neutral-800);
+    --ui-bg-elevated: var(--ui-color-neutral-800);
+    --ui-bg-accented: var(--ui-color-neutral-700);
+    --ui-bg-inverted: #fff;
+    --ui-border: var(--ui-color-neutral-800);
+    --ui-border-muted: var(--ui-color-neutral-700);
+    --ui-border-accented: var(--ui-color-neutral-700);
+    --ui-border-inverted: #fff;
+  }
+}
+
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-[data-theme="dark"] {  
-  --ui-primary: #0FF;
+[data-theme="dark"] {
+  --ui-primary: #0ff;
 }
 
-.dark {  
-  --ui-primary: #0FF;
-}
-.light {  
-  --ui-primary: #F0F;
+.dark {
+  --ui-primary: #0f9;
 }
 
+.light {
+  --ui-primary: #f07;
+}
+
+:root.cust {
+  --ui-primary: #F07;
+  --ui-secondary: #0f9;
+  --ui-bg: #000;
+  --ui-text-highlighted: var(--ui-primary);
+  --ui-text: var(--ui-primary);
+  --ui-border-accented: var(--ui-primary);
+  --ui-border: var(--ui-primary);
+
+  backdrop-filter: none;
+  color: #f0f;
+  --color-default-50: oklch(0.985 0 0);
+  --color-default-100: oklch(0.97 0 0);
+  --color-neutral-200: oklch(62.793% 0.25768 29.223);
+  --color-default-200x: oklch(0.922 0 0);
+  --color-default-300: oklch(0.87 0 0);
+  --color-default-400: oklch(0.708 0 0);
+  --color-default-500: oklch(0.556 0 0);
+  --color-default-600: oklch(0.439 0 0);
+  --color-default-700: oklch(0.2 0 0);
+  --color-default-700x: oklch(0.371 0 0);
+  --color-default-800: oklch(0.15 0 0);
+  --color-default-800x: oklch(0.269 0 0);
+  --color-default-900: oklch(0.05 0 0);
+  --color-default-900x: oklch(0.105 0 0);
+  --color-default-950: oklch(0.145 0 0);
+}
+
+:root.cust header {
+  backdrop-filter: none;
+  background: transparent;
+  border-color: color-mix(in srgb, var(--ui-primary) 20%, transparent);
+}
+:root.cust button {
+  border: 1px solid;
+  border-color: transparent;
+}
+:root.cust button:hover {
+  background: transparent;
+  border-color: var(--ui-primary);
+}
+:root.cust li button:hover {
+  background: transparent;
+  border-color: transparent;
+}
+:root.cust a {
+  background: transparent;
+}
+:root.cust a:hover {
+  background: transparent;
+  --ui-border-accented: var(--ui-secondary);
+  color: var(--ui-secondary);
+}
+:root.cust a span:hover {
+  color: var(--ui-secondary);
+}
+:root.cust a:active {
+  background: color-mix(in srgb, var(--ui-secondary) 30%, transparent); 
+  --ui-border-accented: var(--ui-secondary);
+}
+:root.cust .color-mode-button {
+  display: none;
+}
+
+:root.cust .popover-component {
+  background: transparent;
+}
 
 :root {
-
   --font-sans: "PPM-V", system-ui, sans-serif;
   --font-sans-nm: "PPNM-V", system-ui, sans-serif;
 
   --color-violet-50: oklch(0.985 0 0);
   --color-violet-100: oklch(0.97 0 0);
-  --color-violet-200: oklch(0.960 0 0);
+  --color-violet-200: oklch(0.96 0 0);
   --color-violet-200x: oklch(0.922 0 0);
   --color-violet-300: oklch(0.87 0 0);
   --color-violet-400: oklch(0.708 0 0);
   --color-violet-500: oklch(0.556 0 0);
   --color-violet-600: oklch(0.439 0 0);
-  --color-violet-700: oklch(0.200 0 0);
+  --color-violet-700: oklch(0.2 0 0);
   --color-violet-700x: oklch(0.371 0 0);
-  --color-violet-800: oklch(0.150 0 0);
+  --color-violet-800: oklch(0.15 0 0);
   --color-violet-800x: oklch(0.269 0 0);
   --color-violet-900: oklch(0.05 0 0);
   --color-violet-900x: oklch(0.105 0 0);
   --color-violet-950: oklch(0.145 0 0);
-
-
 }
 
 .indicator-dot {
---indicator-size: 12px;
-margin-top: 4px;
-translate: var(--tw-translate-x) calc(var(--indicator-position) * 0.7);
+  --indicator-size: 12px;
+  margin-top: 4px;
+  translate: var(--tw-translate-x) calc(var(--indicator-position) * 0.7);
 }
 
 nav > ul > li {
@@ -67,12 +179,11 @@ h1.text-pretty {
 }
 
 .post-description {
-   font-weight: 200;
+  font-weight: 200;
 }
 
-
 .post-headline {
-   font-weight: 200;
+  font-weight: 200;
 }
 
 .md-content p {
@@ -83,7 +194,7 @@ h1.text-pretty {
 
 .md-content th {
   font-weight: 300;
-  font-size: .3em;
+  font-size: 0.3em;
 }
 
 .x-md-content .text-pretty {
