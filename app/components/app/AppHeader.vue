@@ -30,7 +30,7 @@ const routeArray = route.path.split('/')
           <LanguageSelect />
 
           <template #fallback>
-            <div class="h-8 w-8 rounded-full animate-pulse bg-neutral-200 dark:bg-neutral-800" />
+            <div class="h-8 w-8 rounded-full animate-pulse bg-neutral-200 dark:bg-neutral-800 skeleton-circle" />
           </template>
         </ClientOnly>
 
@@ -45,7 +45,7 @@ const routeArray = route.path.split('/')
         <UColorModeButton class="color-mode-button rounded-full" />
 
         <template #fallback>
-          <div class="h-8 w-8 animate-pulse bg-neutral-200 dark:bg-neutral-800 rounded-full" />
+          <div class="h-8 w-8 animate-pulse bg-neutral-200 dark:bg-neutral-800 opacity-2 skeleton-circle" />
         </template>
       </ClientOnly>
 

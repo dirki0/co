@@ -128,6 +128,10 @@
   background: transparent;
 }
 
+ :root.cust .skeleton-circle {
+  background: color-mix(in srgb, var(--ui-primary) 20%, transparent); 
+ }
+
 :root {
   --font-sans: "PPM-V", system-ui, sans-serif;
   --font-sans-nm: "PPNM-V", system-ui, sans-serif;
