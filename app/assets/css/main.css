@@ -129,6 +129,7 @@
 }
 
  :root.cust .skeleton-circle {
+  border-radius: calc(infinity * 1px);
   background: color-mix(in srgb, var(--ui-primary) 20%, transparent); 
  }
 
